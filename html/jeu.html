@@ -1,0 +1,45 @@
+<div id="jeu" class="jeuCtrl" data-ng-controller="jeuCtrl">
+
+
+	<div class="col-sm-offset-3 col-sm-6">
+		<div class="row">
+
+			<div class="chanteur col-sm-offset-2 col-sm-2" data-ng-repeat="chanteur in chanteurs">
+
+				<audio id="audio-{{chanteur.id}}">
+					<source src="{{chanteur.source}}" type="audio/mpeg">
+				</audio>
+
+				<img class="actif-{{chanteur.actif}}" src="css/images/jeu/{{chanteur.id}}.jpg" data-ng-click="jouer(chanteur)">				
+			</div>
+		
+		</div>
+	</div>
+
+
+	<!--<div class="chanteur col-sm-offset-2 col-sm-2">
+		<img src="css/images/jeu/karine.jpg" data-ng-click="jouer('karine')">
+	</div>
+
+	<div class="chanteur col-sm-offset-1 col-sm-2">
+		<img src="css/images/jeu/solenn.jpg" data-ng-click="jouer('solenn')">
+	</div>
+
+	<div class="chanteur col-sm-offset-1 col-sm-2">
+		<img src="css/images/jeu/manue.jpg" data-ng-click="jouer('manue')">
+	</div>
+	
+	<div class="chanteur col-sm-offset-2 col-sm-2">
+		<img src="css/images/jeu/xavier.jpg" data-ng-click="jouer('xavier')">
+	</div>
+	
+	<div class="chanteur col-sm-offset-1 col-sm-2">
+		<img src="css/images/jeu/romuald.jpg" data-ng-click="jouer('romuald')">
+	</div>
+	
+	<div class="chanteur col-sm-offset-1 col-sm-2">
+		<img src="css/images/jeu/eric.jpg" data-ng-click="jouer('eric')">
+	</div>
+-->
+   
+</div>

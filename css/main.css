@@ -1,0 +1,382 @@
+body {
+  overflow-x: hidden;
+  background: radial-gradient( farthest-side ellipse at top left, rgb(255, 255, 255), rgb(73, 73, 73));
+  background-attachment: fixed;
+}
+
+#fond {
+  background-image: url("images/fond.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 80% 0%;
+}
+
+#bordure-fond {
+    position: fixed;
+    float: left;
+    bottom: 0px;
+    margin-left: 0px;
+    opacity: 0.3;
+}
+
+#main {
+  padding-bottom: 10px;
+  min-height: 100vh;
+}
+
+#logo {
+    float: right;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+#logo img {
+}
+
+#bandeau {
+  opacity: 0.8;
+  position: fixed;
+  width: 38%;
+  top: 10px;
+  left: 10%;
+}
+
+#bandeau img {
+    border-radius: 30px 0px;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu .btn-group {
+	padding-right: 15px;
+	margin-top: 20px;
+}
+
+#content {
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.padding5 {
+	padding-left: 5px;
+}
+
+.menu-btn {
+    border: none;
+    border-radius: 18px !important;
+    background-color: #BE0926;
+    color: white;
+    box-shadow: 2px 2px 10px black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-right: 15px;
+}
+
+.menu-btn:hover {
+	border: none;
+}
+
+.menu-btn.actif-true {
+    color: #333;
+	background-color: #e6e6e6;
+}
+
+.menu-btn:focus {
+	outline:0;
+}
+
+.menu-btn:focus:active {
+	outline:0;
+}
+
+#reseauxSociaux {
+    /* margin-left: 50%; */
+    /* margin-top: 5%; */
+}
+
+#reseauxSociaux a {  
+	color: rgb(56, 54, 58);
+}
+
+#extraitMusic {
+	background-color: rgba(84, 75, 75, 0.84);
+	border-radius: 2px;
+	padding: 5px;
+	min-width: 170px;
+	margin-right: 30%;
+	margin-left: 19%;
+	margin-top: 7%;
+	box-shadow: 1px 1px 5px rgb(68, 68, 68);
+}
+
+#extraitMusic .bouton {
+	float: left;
+	cursor: pointer;
+	color: rgb(190, 9, 38);
+	padding-left: 5px;
+	padding-top: 3px;
+}
+
+#extraitMusic .boutonPause {
+	display: block;
+	background-image: url("img/pause_red.png");
+	width: 16px;
+	height: 16px;	
+	float: left;
+	cursor: pointer;
+}
+
+#extraitMusic .boutonStop {
+	display: block;
+	background-image: url("img/stop_red.png");
+	width: 16px;
+	height: 16px;	
+	float: left;
+	cursor: pointer;
+}
+
+#extraitMusic .nom {
+	padding-left: 10px;
+	font-size: 0.9em;
+	color: white;
+}
+
+#presentation .photo {
+    width: 100%;	
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(94, 94, 94);
+}
+
+#presentation .br {
+    margin-top: 9px;
+}
+
+#presentation .texte {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#presentation .texte .adlib {
+    color: #BE0926;
+    margin-bottom: 3px;
+    border: none;
+}
+
+#presentation .cadre {
+    padding: 15px;
+    background-color: rgba(245, 244, 244, 0.41);
+    border-radius: 27px;
+}
+
+#presentation .accroche {
+    margin-top: 40px;
+   text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+}
+.vertical-align > [class^="col-"] > div,
+.vertical-align > [class*=" col-"] > div {
+  flex-grow: 1;
+}
+
+#chanteurs .photo {
+	box-shadow: 4px 4px 15px rgb(47, 47, 47);
+	border-radius: 2px;
+}
+
+#chanteurs .nom {
+	color: white;
+	font-size: 1.4em;
+}
+
+#chanteurs .voix {
+	color: #BE0926;
+	font-size: 1.4em;
+}
+
+#chanteurs .row {
+	margin-bottom: 20px;
+}
+
+#chanteurs .karine .photo {
+	width: 100%;
+	margin-top: 5%;
+	-ms-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+#chanteurs .karine.texte {
+	margin-top: 65%;
+}
+
+#chanteurs .solenn {
+	width: 55%;
+	float: left;
+}
+
+#chanteurs .solenn .photo {
+	width: 100%;
+	margin-top: -5%;
+	-ms-transform: rotate(7deg); 
+	-webkit-transform: rotate(7deg);
+	transform: rotate(7deg);
+}
+
+#chanteurs .solenn.texte {
+	margin-top: 75%;
+	width: 76%;
+	text-align: right;
+	margin-left: 16%;
+}
+
+#chanteurs .manue {
+    float: right;
+	//height: 50px;
+    width: 80%;
+    margin-right: -5%;
+}
+
+#chanteurs .manue .photo {
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+#chanteurs .manue.texte {
+	margin-top: 100%;
+	float: left;
+	margin-left: 9%;
+}
+
+#chanteurs .romuald {
+	width: 60%;
+	//height: 50px;
+	float: right;
+	margin-right: 2%;
+}
+
+#chanteurs .romuald .photo {
+	width: 100%;
+	margin-top: -5%;
+	margin-left: -16%;
+	-ms-transform: rotate(7deg); 
+	-webkit-transform: rotate(7deg);
+	transform: rotate(-5deg);
+}
+
+#chanteurs .romuald.texte {
+	margin-top: 4%;
+	/* width: 76%; */
+	float: left;
+	margin-left: -39%;
+	text-align: right;
+}
+
+#chanteurs .eric {
+	width: 55%;
+	margin-left: -10%;
+	margin-top: -3%;
+}
+
+#chanteurs .eric .photo {
+	width: 100%;
+	margin-top: -10%;
+	margin-left: -18%;
+	-ms-transform: rotate(1deg); 
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+#chanteurs .eric.texte {
+	margin-top: 195%;
+	float: left;
+	margin-left: -65%;
+	text-align: right;
+}
+
+#chanteurs .xavier {
+    width: 60%;
+    margin-left: -5%;
+}
+
+#chanteurs .xavier .photo {
+	width: 100%;
+	margin-top: 0%;
+	margin-left: -37%;
+	-ms-transform: rotate(-5deg); 
+	-webkit-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+#chanteurs .xavier.texte {
+	margin-top: -52%;
+	float: left;
+	margin-left: 40%;
+	text-align: left;
+	width: 30%;
+}
+
+#chanteurs .adeline {
+	width: 50%;
+	float: right;
+	margin-right: -1%;
+}
+
+#chanteurs .adeline .photo {
+	width: 100%;
+	margin-top: -11%;
+	margin-left: -16%;
+	-ms-transform: rotate(0deg); 
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+#chanteurs .adeline.texte {
+	margin-top: 15%;
+	width: 76%;
+	float: left;
+	margin-left: -83%;
+	text-align: left;
+}
+#chanteurs .adeline .voix {
+	text-align: left;
+	color: white;
+	background-color: rgb(190, 9, 38);
+	border-radius: 0px 34px 34px 0px;
+	padding-left: 11px;
+	font-size: 1.1em;
+	box-shadow: 1px 2px 8px rgb(61, 61, 61);
+}
+
+#videos .video {
+	text-align: center;
+}
+
+#jeu .chanteur {
+	margin-top: 20px;
+}
+
+#jeu .chanteur .actif-false {
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+	-moz-filter: brightness(50%);
+	-o-filter: brightness(50%);
+	-ms-filter: brightness(50%);
+}
