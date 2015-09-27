@@ -69,7 +69,7 @@ a {
 	padding-left: 5px;
 }
 
-.menu-btn {
+.menu .menu-btn {
     border: none;
     border-radius: 18px !important;
     background-color: #BE0926;
@@ -80,26 +80,32 @@ a {
     margin-right: 15px;
 }
 
-.menu-btn:hover {
+.menu .menu-btn:hover {
 	border: none;
 }
 
-.menu-btn.actif-true {
+.menu .menu-btn.actif-true {
     color: #333;
 	background-color: #e6e6e6;
 }
 
-.menu-btn:focus {
+.menu .menu-btn:focus {
 	outline:0;
 }
 
-.menu-btn:focus:active {
+.menu .menu-btn:focus:active {
 	outline:0;
 }
+
+.menu .btn-group-xs>.btn, .btn-xs {
+font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 
 #reseauxSociaux {
-    /* margin-left: 50%; */
-    /* margin-top: 5%; */
+    margin-top: 35%;
+}
+
+#reseauxSociaux img{
+	width: 36px;
 }
 
 #reseauxSociaux a {  
@@ -153,6 +159,7 @@ a {
     width: 100%;	
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgb(94, 94, 94);
+	margin-bottom: 20px;
 }
 
 #presentation .br {
