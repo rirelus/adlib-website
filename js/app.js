@@ -1,7 +1,7 @@
 'use strict';
 
 var adlibApp = angular.module('adlibApp', [
-	'ngRoute'
+	'ngRoute', 'ngAnimate', 'ui.bootstrap'
 ]);
 
 
@@ -22,6 +22,9 @@ adlibApp.config(['$routeProvider', function($routeProvider) {
    	}).when('/videos', { 
       templateUrl: './html/videos.html',
       controller: 'videosCtrl'
+   	}).when('/photos', { 
+      templateUrl: './html/photos.html',
+      controller: 'photosCtrl'
    	}).when('/jeu', { 
       templateUrl: './html/jeu.html',
       controller: 'jeuCtrl'

@@ -38,7 +38,7 @@ function menuCtrl ($http, $scope, $rootScope, $location) {
 		  nom: "Nos photos",
 		  url: "/photos",
 		  actif: false,
-		  visible: false
+		  visible: true
 		},
 		{ code: "videos",
 		  nom: "Nos vidéos",

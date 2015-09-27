@@ -4,6 +4,10 @@ body {
   background-attachment: fixed;
 }
 
+a {
+	border: none;
+}
+
 #fond {
   background-image: url("images/fond.png");
   background-repeat: no-repeat;
@@ -367,6 +371,18 @@ body {
 
 #videos .video {
 	text-align: center;
+}
+
+#photos .carousel-control.left, .carousel-control.right  {
+	background-image : none;
+    border: none;
+}
+
+#photos img.photo {
+	margin: auto;
+	box-shadow: 4px 4px 15px rgb(47, 47, 47);
+	border-radius: 5px;
+	border: solid 29px #EFEBEB;
 }
 
 #jeu .chanteur {
