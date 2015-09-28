@@ -146,9 +146,14 @@ font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 }
 
 #extraitMusic .nom {
-	padding-left: 10px;
+	padding-left: 20px;
 	font-size: 0.9em;
 	color: white;
+}
+
+#extraitMusic .progress {
+	height: 5px;
+	display: inline-block;
 }
 
 #presentation .photo {

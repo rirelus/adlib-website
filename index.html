@@ -74,6 +74,7 @@
 									</div>
 								</div>
 							</div>	-->
+							
 		    			</div>		
 						
 						<div class="col-lg-8 col-xs-7">
@@ -93,12 +94,28 @@
 								</div>			
 							</div>
 							
+							<div class="row">
+								<div id="extraitMusic" data-ng-controller="extraitMusicCtrl">
+									<audio id="audio">
+										<source id="{{music.id}}" data-ng-repeat="music in musics" src="{{music.source}}" type="audio/mpeg">
+									</audio>
+									<div class="ecouter">
+										<i class="bouton fa fa-fast-backward" data-ng-click="previous()"></i>
+										<i class="bouton fa fa-play" data-ng-if="!isPlaying" data-ng-click="play()"></i>
+										<i class="bouton fa fa-pause" data-ng-if="isPlaying" data-ng-click="pause()"></i>
+										<i class="bouton fa fa-stop" data-ng-click="stop()"></i>
+										<i class="bouton fa fa-fast-forward" data-ng-click="next()"></i>
+										<span class="nom" title="{{currentMusic.composer}}">{{currentMusic.titre}}</span>
+									</div>
+									<progressbar animate="false" value="progress" type="success"></progressbar>
+								</div>
+							</div>
+							
 						</div>
-		    		
-		    			    					    				
-				    					
+	
 						
 					</div>
+					
 					
 					<div>
 				    	<div class="col-md-10 col-xs-12">
