@@ -154,6 +154,7 @@ font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 
 #extraitMusic .progress {
 	height: 5px;
+    padding: 0px;
 }
 
 #extraitMusic .progress-bar-success {

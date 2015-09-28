@@ -95,7 +95,7 @@
 										<i class="bouton fa fa-fast-forward" data-ng-click="next()"></i>
 										<span class="nom" title="morceau de {{currentMusic.composer}}, arrangé par {{currentMusic.arranger}}">{{currentMusic.titre}}</span>
 									</div>
-									<progressbar class="col-xs-7" animate="false" value="progress" type="success"></progressbar>
+									<progressbar class="col-xs-7" animate="false" value="progress" type="success" ng-click="clic($event)"></progressbar>
 								</div>
 							</div>
 							

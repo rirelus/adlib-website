@@ -81,15 +81,17 @@ function extraitMusicCtrl ($http, $scope, $interval) {
 	};
 	
 	$interval(function() {
-		console.log("interval");
 		var audio = document.getElementById("audio");
 		$scope.progress = (audio.currentTime / audio.duration) * 100;
-		
 		if ($scope.progress >= 100) {
 			$scope.next();
-		}
-		
+		}		
     }, 1000);
 	
+	$scope.clic = function (e) {
+		var prct = e.offsetX / $(e.currentTarget).width();
+		var audio = document.getElementById("audio");
+		audio.currentTime = audio.duration * prct;
+	}
 		
 }
