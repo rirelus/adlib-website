@@ -57,24 +57,12 @@
 						
 						<div class="col-xs-1">
 		    				<div id="reseauxSociaux">
-								<div><a href="http://www.facebook.com/adlibacapella"><img src="css/images/facebook.png"></img></a></div>
-		    					<div><a href="http://www.youtube.com/channel/UC9rj7ycpgn_PdeyuXyknPxw"><img src="css/images/youtube.png"></img></a></div>
+								<!--<div><a href="http://www.facebook.com/adlibacapella"><img src="css/images/facebook.png"></img></a></div>
+		    					<div><a href="http://www.youtube.com/channel/UC9rj7ycpgn_PdeyuXyknPxw"><img src="css/images/youtube.png"></img></a></div>-->
+		    					<div><a href="http://www.facebook.com/adlibacapella"><i class="fa fa-facebook-square fa-3x"></i></a></div>
+		    					<div><a href="http://www.youtube.com/channel/UC9rj7ycpgn_PdeyuXyknPxw"><i class="fa fa-youtube-square fa-3x"></i></a></div>
 	    					</div>
-		    			
-		    				<!--<div id="extraitMusic" data-ng-controller="extraitMusicCtrl">
-								<div data-ng-repeat="music in musics">
-									<audio id="{{music.id}}">
-										<source src="{{music.source}}" type="audio/mpeg">
-									</audio>
-									<div class="ecouter">
-										<i class="bouton fa fa-play" data-ng-if="!music.isPlaying" data-ng-click="play(music)"></i>
-										<i class="bouton fa fa-pause" data-ng-if="music.isPlaying" data-ng-click="pause(music)"></i>
-										<i class="bouton fa fa-stop" data-ng-click="stop(music)"></i>
-										<span class="nom" title="{{music.composer}}">{{music.titre}}</span>
-									</div>
-								</div>
-							</div>	-->
-							
+		    										
 		    			</div>		
 						
 						<div class="col-lg-8 col-xs-7">
@@ -95,19 +83,19 @@
 							</div>
 							
 							<div class="row">
-								<div id="extraitMusic" data-ng-controller="extraitMusicCtrl">
+								<div id="extraitMusic" class="row" data-ng-controller="extraitMusicCtrl">
 									<audio id="audio">
 										<source id="{{music.id}}" data-ng-repeat="music in musics" src="{{music.source}}" type="audio/mpeg">
 									</audio>
-									<div class="ecouter">
+									<div class="col-xs-5 ecouter">
 										<i class="bouton fa fa-fast-backward" data-ng-click="previous()"></i>
 										<i class="bouton fa fa-play" data-ng-if="!isPlaying" data-ng-click="play()"></i>
 										<i class="bouton fa fa-pause" data-ng-if="isPlaying" data-ng-click="pause()"></i>
 										<i class="bouton fa fa-stop" data-ng-click="stop()"></i>
 										<i class="bouton fa fa-fast-forward" data-ng-click="next()"></i>
-										<span class="nom" title="{{currentMusic.composer}}">{{currentMusic.titre}}</span>
+										<span class="nom" title="morceau de {{currentMusic.composer}}, arrangé par {{currentMusic.arranger}}">{{currentMusic.titre}}</span>
 									</div>
-									<progressbar animate="false" value="progress" type="success"></progressbar>
+									<progressbar class="col-xs-7" animate="false" value="progress" type="success"></progressbar>
 								</div>
 							</div>
 							
@@ -132,23 +120,6 @@
 			</div>
 		</div>
 	</div>         
-   
-   
-   
-	
-   
-   
-   
-   
-   
-   
-
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>-->
-    
-    
-    
-    
     
   </body>
 </html>

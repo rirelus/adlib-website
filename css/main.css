@@ -149,11 +149,15 @@ font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 	padding-left: 20px;
 	font-size: 0.9em;
 	color: white;
+	cursor: default;
 }
 
 #extraitMusic .progress {
 	height: 5px;
-	display: inline-block;
+}
+
+#extraitMusic .progress-bar-success {
+	background-color: rgb(160, 137, 137);
 }
 
 #presentation .photo {

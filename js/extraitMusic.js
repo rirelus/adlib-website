@@ -5,21 +5,25 @@ function extraitMusicCtrl ($http, $scope, $interval) {
 		id : 'music0',
 		titre : 'New world',
 		composer : 'Björk',
+		arranger : 'Adeline Guihard',
 		source : './music/01 New world.mp3'
 	}, {
 		id : 'music1',
 		titre : 'Le chemin',
 		composer : 'Adeline Guihard',
+		arranger : 'Adeline Guihard',
 		source : './music/03 Le chemin.mp3'
 	}, {
 		id : 'music2',
 		titre : 'Sign your name',
 		composer : "Terence Trent D'Arby",
+		arranger : 'Adeline Guihard',
 		source : './music/06 Sign your name.mp3'
 	}];
 
 	$scope.currentMusicInd = 0;	
 	$scope.currentMusic = $scope.musics[$scope.currentMusicInd];
+	$scope.progress = 0;
 
 	// Lecture d'une chanson
 	$scope.play = function () {
@@ -81,7 +85,7 @@ function extraitMusicCtrl ($http, $scope, $interval) {
 		var audio = document.getElementById("audio");
 		$scope.progress = (audio.currentTime / audio.duration) * 100;
 		
-		if ($scope.progree >= 100) {
+		if ($scope.progress >= 100) {
 			$scope.next();
 		}
 		
