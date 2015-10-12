@@ -87,7 +87,7 @@
 									<audio id="audio">
 										<source id="{{music.id}}" data-ng-repeat="music in musics" src="{{music.source}}" type="audio/mpeg">
 									</audio>
-									<div class="col-xs-5 ecouter">
+									<div class="col-xs-7 ecouter">
 										<i class="bouton fa fa-fast-backward" data-ng-click="previous()"></i>
 										<i class="bouton fa fa-play" data-ng-if="!isPlaying" data-ng-click="play()"></i>
 										<i class="bouton fa fa-pause" data-ng-if="isPlaying" data-ng-click="pause()"></i>
@@ -95,7 +95,7 @@
 										<i class="bouton fa fa-fast-forward" data-ng-click="next()"></i>
 										<span class="nom" title="morceau de {{currentMusic.composer}}, arrangé par {{currentMusic.arranger}}">{{currentMusic.titre}}</span>
 									</div>
-									<progressbar class="col-xs-7" animate="false" value="progress" type="success" ng-click="clic($event)"></progressbar>
+									<progressbar class="col-xs-5" animate="false" value="progress" type="success" ng-click="clic($event)"></progressbar>
 								</div>
 							</div>
 							

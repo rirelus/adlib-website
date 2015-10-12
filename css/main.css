@@ -115,7 +115,7 @@ font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 	min-width: 170px;
 	margin-right: 30%;
 	margin-left: 19%;
-	margin-top: 7%;
+	margin-top: 10%;
 	box-shadow: 1px 1px 5px rgb(68, 68, 68);
 }
 
@@ -154,11 +154,13 @@ font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 
 #extraitMusic .progress {
 	height: 5px;
-    padding: 0px;
+	padding: 0px;
+	margin-top: 1.5%;
+	margin-bottom: 0px;
 }
 
 #extraitMusic .progress-bar-success {
-	background-color: rgb(160, 137, 137);
+	background-color: rgb(190, 9, 38);
 }
 
 #presentation .photo {
@@ -396,6 +398,7 @@ font-size: 13px;padding: 4px 8px;margin-bottom: 12px;}
 	box-shadow: 4px 4px 15px rgb(47, 47, 47);
 	border-radius: 5px;
 	border: solid 29px #EFEBEB;
+	max-height: 80vh;
 }
 
 #jeu .chanteur {

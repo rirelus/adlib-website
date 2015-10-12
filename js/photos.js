@@ -1,7 +1,7 @@
 
 function photosCtrl ($http, $scope, $rootScope, $location) {
 
-	$scope.NB_PHOTOS = 3
+	$scope.NB_PHOTOS = 8;
 
 	$rootScope.activeLien('photos');	
 	
