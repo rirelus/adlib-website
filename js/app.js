@@ -31,6 +31,9 @@ adlibApp.config(['$routeProvider', function($routeProvider) {
    	}).when('/', { 
       templateUrl: './html/presentation.html',
       controller: 'presentationCtrl'
+   	}).when('/backstage', {
+      templateUrl: './html/backstage.html',
+      controller: 'backstageCtrl'
    	}).otherwise({
         redirectTo: '/'
     });
